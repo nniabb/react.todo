@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background: #EA5959;
+  display: flex;
+  justify-content: center;
+  font-family: 'Lato';
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.whitebox{
+  margin-top: 15px;
+  height: 600px;
+  width: 970px ;
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tasks{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 3% 0 0 5%;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+}
+
+.categories{
+  display: flex;
+  width: 190px;
+  border: none;
+  border-right: 1px solid #D8D8D8;
+  padding: 11% 0 0 0;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #525252;
+  font-size: 22px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.h2{
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.inpt{
+  border-radius: 8px;
+  background: #F3F3F3;
+  width: 600px;
+  height: 47px;
+  padding: 15px;
+  border: none;
+  margin-bottom: 30px;
+}
+
+::placeholder{
+  color: #B5B5B5;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.li{
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.chbox{
+  margin-right: 15px;
+  appearance: none;
+  -webkit-appearance: none;
+  height: 22px;
+  width: 22px;
+  border: 1px solid #EA5959;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.chbox:checked{
+  background-color:#EA5959;
+}
+
+h{
+  color: #5A5A5A;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+label{
+  display: flex;
+}
+
+.category{
+  width: 115px;
+  height: 24px;
+  border-radius: 4px;
+  background: #EA5959;  
+  margin: 0 0 0 4%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 400; 
 }
 
-.App-link {
-  color: #61dafb;
+.pr{
+  display: flex;
+  gap: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pr:hover .btn {
+  display: block;
 }
+
+.btn{
+  border: none;
+  display: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
